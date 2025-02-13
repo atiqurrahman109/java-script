@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="">kohinoor</label>
+    <input type="text" id="kohinoor">
+    <label for="">belal</label>
+    <input type="text" id="belal">
+    <label for="">afif</label>
+    <input type="text" id="afif">
+
+    <input type="button" value="number" onclick="sequence()"> <br>
+
+    <span for="" id="result">
+
+    </span>
+
+
+
+
+
+
+    <script>
+
+        function sequence() {
+
+            let kohinoor = parseFloat(document.getElementById("kohinoor").value);
+            let belal = parseFloat(document.getElementById("belal").value);
+            let afif = parseFloat(document.getElementById("afif").value);
+
+            if (kohinoor >= belal && kohinoor >= afif) {
+                document.getElementById("result").innerHTML = kohinoor + "Kohinoor Senior"
+
+            }
+
+            else if (belal >= afif) {
+                document.getElementById("result").innerHTML = belal + " Belal Senior"
+
+
+
+            }
+
+
+
+
+            else {
+                document.getElementById("result").innerHTML =  afif + " Afif Senior"
+
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
