@@ -13,26 +13,20 @@
 
         let userInput = parseInt(prompt("input the number than see is it prime or not"));
         let count = 0;
-
         for (let i = 1; i <= userInput; i++) {
-
 
             if (userInput % i == 0) {
                 count += 1;
             }
+        }
 
-            if (count == 2) {
+        if (count == 2) {
                 document.write(userInput + "is prime number");
             }
-             else {
+            else {
                 document.write(userInput + "is not prime number");
 
             }
-
-        }
-
-
-
     </script>
 </body>
 

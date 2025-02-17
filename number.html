@@ -9,17 +9,17 @@
 
 <body>
 
-    <label for="">positive</label><br>
-    <input type="text" id="number"><br>
+    <label for="">number</label><br>
+    <input type="text" id="number"><br> <br>
 
-    <input type="text" value="see" onclick="number1()"> <br>
+    <button type="text" value="result" onclick="number1()"> <br>
 
     <script>
 
 
         function number1() {
-            let positive = parseFloat(document.getElementById("number").value);
-            if (positive > 0) {
+            let number = parseFloat(document.getElementById('number').value);
+            if (number > 0) {
                 document.write(number + " is Positive");
             }
             else if(negative < 0) {
