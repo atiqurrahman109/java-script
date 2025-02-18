@@ -10,26 +10,24 @@
 
 
     <script>
+        let input=parseInt(prompt("user input"));
 
-let n=parseInt(prompt("enter digit"))
+        let n1=0;
+        let n2=1;
+        let sum=0;
 
-let n1=0;
-let n2=1;
-let sum=0;
+        document.write(n1+"<br>");
+        document.write(n2+"<br>");
 
-document.write(n1+" <br>")
-document.write(n2+" <br>")
+        for( let i=3;i<=input; i++){
 
+        sum=n1+n2;
+        document.write(sum+"<br>");
+        n1=n2;
+        n2=sum;
+    }
+            // document.write();
 
-for(let i=3; i<=n-2; i++){
-
-sum=n1+n2;
-n1=n2;
-n2=sum;
-
-document.write(sum+"<br>")
-
-}
 
 
 
