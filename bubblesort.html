@@ -8,16 +8,16 @@
 <body>
     <script>
 
-        let n=[50,10,45,20,95,89];
+        let n=[50,10,89];
 
         
         for(i=0;i<n.length-1;i++){
 
-            for(j=0; j<n.length-1-i; i++){
+            for(j=0; j<n.length-1-i; j++){
 
                 if(n[j]>n[j+1])
                 {
-                     temp=n[j];
+                    let temp=n[j];
                     n[j]=n[j+1];
                     n[j+1]=temp;
 
