@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let names = ["aifa", "konok", "robiul", " tahmina", "bilkis", "afif", "afiah"];
+        let passwords = ["123", "456", "789", "321", "654", "987", "098"];
+
+        let userName = prompt("input name").toLowerCase();
+
+        for (i = 0, i < names.length; i++;) {
+            if (userName == names) {
+                let index = i
+                document.write(i)
+                let password=prompt("enter your password").toLowerCase();
+            }
+
+            if(password==passwords[i]){
+                document.write(" welcome home");
+                }
+                 else{
+                    document.write("incorrect password");
+                 } 
+                 
+                 break;
+                
+                if(i==names.length-1){
+                    document.write("user name is wrong");
+
+                }
+            }
+
+    </script>
+</body>
+
+</html>
