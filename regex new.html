@@ -9,17 +9,17 @@
     
     <script>
 
-        let email=prompt("input email");
+      let email=prompt("give email address");
 
-        let pattern=/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+      let pattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        if(pattern.test(email)){
-            document.write("correct");
+      if(pattern.test(email)){
+        document.write("valid");
 
-        }
-        else{
-            document.write("invalid");
-        }
+      }
+      else{
+        document.write("invalid");
+      }
     </script>
 </body>
 </html>
